@@ -5,5 +5,8 @@ let pokemonList=[
     {name:'Mewtwo',height:2,type:'psychic'}
 ]
 for(let i=0;i<pokemonList.length; i++) {
-    document.write(pokemonList[i].name + "(height:" + pokemonList[i].height + ")<br>");
+    if (pokemonList[i].height >1){
+        document.write(pokemonList[i].name + ' ' + "(height:" + pokemonList[i].height + ')' + " " + "Wow, that's Big!" + "<br>");
+    } else{document.write(pokemonList[i].name + ' ' + "(height:" + pokemonList[i].height + ")<br>");
+    }
 }
