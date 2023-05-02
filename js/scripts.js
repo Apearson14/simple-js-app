@@ -76,18 +76,12 @@ function getAll() {
           console.error(e);
         });
       }
-      function showDetails(item) {
-        pokemonRepository.loadDetails(item).then(function () {
-          console.log(item);
-        });
-      }
+
     return {
         add: add,
         getAll: getAll,
         addListItem: addListItem,
-        loadList: loadList,
-        loadDetails: loadDetails,
-        showDetails: showDetails
+        loadList: loadList
     };
   })();
   
