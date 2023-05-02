@@ -75,20 +75,19 @@ function getAll() {
         .catch(function (e) {
           console.error(e);
         });
-    }
-    function showDetails(pokemon) {
-      loadDetails(pokemon).then(function () {
-        showModal(pokemon);
-      });
-    }  
+      }
+      function showDetails(item) {
+        pokemonRepository.loadDetails(item).then(function () {
+          console.log(item);
+        });
+      }
     return {
-      getAll: getAll,
-      add: add,
-      addListItem: addListItem,
-      loadList: loadList,
-      loadDetails: loadDetails,
-      showDetails: showDetails,
-      showModal: showModal,
+        add: add,
+        getAll: getAll,
+        addListItem: addListItem,
+        loadList: loadList,
+        loadDetails: loadDetails,
+        showDetails: showDetails
     };
   })();
   
