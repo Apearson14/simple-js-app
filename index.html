@@ -7,12 +7,24 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
   <body>
-    <button id="show-modal">Show modal</button>
-    <div id="modal-container">
-      <div class="modal">
-        <button class="modal-close">Close</button>
-        <h1>Modal title</h1>
-        <p>Modal text</p>       
+    <ul class="pokemon-list list-group"></ul>
+    <div class="modal fade" id="modal-container" tabindex="-1" role="dialog" aria-labelledby="modal-container-label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal container"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">x</span>
+            </button>
+          </div>
+          <div class="modal-body modal-text">
+          <div class="modal-info modal-text">
+          </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
       </div>
     </div>
     <script src="js/promise-polyfill.js"></script>
